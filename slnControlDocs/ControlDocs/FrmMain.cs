@@ -25,5 +25,18 @@ namespace ControlDocs
             this.Refresh();
         }
 
+        private void tsmEnvios_Click(object sender, EventArgs e)
+        {
+            FrmEnvios frmEnvios = new FrmEnvios();
+            frmEnvios.MdiParent = this;
+            frmEnvios.Show();
+        }
+
+        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReportes reportes = new FrmReportes();
+        
+            reportes.Show();
+        }
     }
 }

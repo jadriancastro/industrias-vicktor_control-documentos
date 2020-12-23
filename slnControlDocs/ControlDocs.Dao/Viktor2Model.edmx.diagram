@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4616a17f8b164090996d527a772253d3" Name="Diagram1">
+        <EntityTypeShape EntityType="Viktor2Model.SBO_ACCOUNT_TEXT" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_CUSTOMER_TEXT" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_FI_GL_01" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_FI_GL_02" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_FI_PC_01" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_MATERIAL_ATTR" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_MATERIAL_TEXT" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_PUR_GR_GRET" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_PUR_IV_CM" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_PUR_PO" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_SALES_DE" Width="1.5" PointX="8.75" PointY="5.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_SALES_IN" Width="1.5" PointX="6.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SBO_SALES_SO" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_ActivityView" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_ActivityWithServiceCallsView" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_AllDocumentsView" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_AllDocumentsView_VAWG" Width="1.5" PointX="2.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_BasedDocsVatView" Width="1.5" PointX="10.75" PointY="13.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_DeferredDocTotalsView" Width="1.5" PointX="12.75" PointY="13.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_Doc12AddressView" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_DocInstallmentsView" Width="1.5" PointX="4.75" PointY="14.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_DocItemView" Width="1.5" PointX="14.75" PointY="5.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_DocLineView" Width="1.5" PointX="6.75" PointY="14.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_DocLinkedDownpaymentsView" Width="1.5" PointX="14.75" PointY="8.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_DocumentDataView" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_EDFLatestLogsView" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_ElectronicDocumentLogViewBR" Width="1.5" PointX="16.75" PointY="5.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_ElectronicDocumentLogViewMX" Width="1.5" PointX="14.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_ElectronicDocumentView" Width="1.5" PointX="16.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_FolioNumbersView" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_JournalEntryCustomerView" Width="1.5" PointX="18.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_JournalEntryFirstTaxIdOrBPView" Width="1.5" PointX="6.75" PointY="18.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_JournalEntryVendorView" Width="1.5" PointX="18.75" PointY="7.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_JournalTransSourceView" Width="1.5" PointX="18.75" PointY="10.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_MarketingDocumentLinesView" Width="1.5" PointX="18.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_MarketingDocumentsView" Width="1.5" PointX="2.75" PointY="19.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_MarketingDocumentsView_AR" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_NLAuditFileOpeningDocView" Width="1.5" PointX="20.75" PointY="6.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_NotFullyCreditedDocView" Width="1.5" PointX="8.75" PointY="20.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_OinmWithBinTransfer" Width="1.5" PointX="20.75" PointY="10.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_OinmWithoutBinTransfer" Width="1.5" PointX="10.75" PointY="20.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_OOCRView" Width="1.5" PointX="4.75" PointY="21.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_PaymentLinesView" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_PaymentMeansDateTotalsView" Width="1.5" PointX="22.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_PaymentMeansPerDateView" Width="1.5" PointX="22.75" PointY="8.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_PaymentMeansView" Width="1.5" PointX="22.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_PaymentsByPayMeansView" Width="1.5" PointX="22.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_PaymentsView" Width="1.5" PointX="6.75" PointY="23.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnB1stAllocDocView" Width="1.5" PointX="22.75" PointY="23.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBAllocateDocView" Width="1.5" PointX="24.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBOITL1OnhCnlView" Width="1.5" PointX="24.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBOpenQtyInnerView" Width="1.5" PointX="24.75" PointY="8.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBOpenQtyInnerViewAlloc" Width="1.5" PointX="24.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBOpenQtyView" Width="1.5" PointX="24.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBOpenQtyViewAlloc" Width="1.5" PointX="24.75" PointY="20.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBOpenQtyViewForWTR" Width="1.5" PointX="24.75" PointY="24.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_SnBReallocDocPathsView" Width="1.5" PointX="12.75" PointY="25.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_VatAcctView" Width="1.5" PointX="26.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_VatPerPaymentMeansView" Width="1.5" PointX="26.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_VatView" Width="1.5" PointX="14.75" PointY="26.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_WAVGListOfTransactionsView" Width="1.5" PointX="16.75" PointY="26.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_WTaxBaseDocView" Width="1.5" PointX="26.75" PointY="24.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_WTaxSumsPerWhtTypeView" Width="1.5" PointX="28.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_WTaxSumsView" Width="1.5" PointX="28.75" PointY="5.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_WTaxSumsWithoutVATWView" Width="1.5" PointX="28.75" PointY="10.75" />
+        <EntityTypeShape EntityType="Viktor2Model.B1_WTaxView" Width="1.5" PointX="28.75" PointY="15.75" />
+        <EntityTypeShape EntityType="Viktor2Model.DOC1_View" Width="1.5" PointX="22.75" PointY="28.75" />
+        <EntityTypeShape EntityType="Viktor2Model.ESTADO" Width="1.5" PointX="28.75" PointY="23.75" />
+        <EntityTypeShape EntityType="Viktor2Model.facnc1" Width="1.5" PointX="0.75" PointY="29.75" />
+        <EntityTypeShape EntityType="Viktor2Model.facturacion_diaria" Width="1.5" PointX="2.75" PointY="29.75" />
+        <EntityTypeShape EntityType="Viktor2Model.IBT1" Width="1.5" PointX="28.75" PointY="29.75" />
+        <EntityTypeShape EntityType="Viktor2Model.IBT1_LINK" Width="1.5" PointX="30.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.ixvITL_LastWhs" Width="1.5" PointX="4.75" PointY="30.75" />
+        <EntityTypeShape EntityType="Viktor2Model.ixvITL_Min" Width="1.5" PointX="30.75" PointY="6.75" />
+        <EntityTypeShape EntityType="Viktor2Model.OIBT" Width="1.5" PointX="6.75" PointY="30.75" />
+        <EntityTypeShape EntityType="Viktor2Model.OINM" Width="1.5" PointX="30.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Viktor2Model.OSRD" Width="1.5" PointX="24.75" PointY="30.75" />
+        <EntityTypeShape EntityType="Viktor2Model.OSRI" Width="1.5" PointX="30.75" PointY="31.75" />
+        <EntityTypeShape EntityType="Viktor2Model.pagos_Clientes" Width="1.5" PointX="32.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.pagos_recibidos" Width="1.5" PointX="32.75" PointY="6.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SINM" Width="1.5" PointX="32.75" PointY="14.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SRI1" Width="1.5" PointX="18.75" PointY="33.75" />
+        <EntityTypeShape EntityType="Viktor2Model.SRI1_LINK" Width="1.5" PointX="20.75" PointY="33.75" />
+        <EntityTypeShape EntityType="Viktor2Model.VBIN" Width="1.5" PointX="34.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Viktor2Model.VBIN_Qty" Width="1.5" PointX="34.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Viktor2Model.VentasporItem" Width="1.5" PointX="34.75" PointY="19.75" />
+        <EntityTypeShape EntityType="Viktor2Model.VentasporItemconsolidado" Width="1.5" PointX="34.75" PointY="26.75" />
+        <EntityTypeShape EntityType="Viktor2Model.OINV" Width="1.5" PointX="27.375" PointY="35.75" />
+        <EntityTypeShape EntityType="Viktor2Model.View_DocEnvios" Width="1.5" PointX="35.375" PointY="33.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

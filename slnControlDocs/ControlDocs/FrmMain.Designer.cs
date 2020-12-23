@@ -31,8 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmEnvios = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.enviosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +50,18 @@
             // ediciónToolStripMenuItem
             // 
             this.ediciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.enviosToolStripMenuItem});
+            this.tsmEnvios,
+            this.reporteToolStripMenuItem});
             this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
             this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.ediciónToolStripMenuItem.Text = "Movimientos";
+            // 
+            // tsmEnvios
+            // 
+            this.tsmEnvios.Name = "tsmEnvios";
+            this.tsmEnvios.Size = new System.Drawing.Size(180, 22);
+            this.tsmEnvios.Text = "Envíos";
+            this.tsmEnvios.Click += new System.EventHandler(this.tsmEnvios_Click);
             // 
             // statusStrip1
             // 
@@ -62,11 +71,12 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // enviosToolStripMenuItem
+            // reporteToolStripMenuItem
             // 
-            this.enviosToolStripMenuItem.Name = "enviosToolStripMenuItem";
-            this.enviosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.enviosToolStripMenuItem.Text = "Envíos";
+            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteToolStripMenuItem.Text = "Reporte";
+            this.reporteToolStripMenuItem.Click += new System.EventHandler(this.reporteToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -100,7 +110,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem ediciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem enviosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmEnvios;
+        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
     }
 }
 

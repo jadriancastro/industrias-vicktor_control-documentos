@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Viktor2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="View_DocEnvios">
+    <Key>
+      <PropertyRef Name="LineNum" />
+    </Key>
+    <Property Name="NumDoc" Type="int" />
+    <Property Name="U_FacNum" Type="nvarchar" MaxLength="20" />
+    <Property Name="FechaDoc" Type="datetime" />
+    <Property Name="FechaVenci" Type="datetime" />
+    <Property Name="CodCliente" Type="nvarchar" MaxLength="15" />
+    <Property Name="NomCliente" Type="nvarchar" MaxLength="100" />
+    <Property Name="DirCliente" Type="nvarchar" MaxLength="254" />
+    <Property Name="TotalDoc" Type="numeric" Precision="19" Scale="6" />
+    <Property Name="Ref1" Type="nvarchar" MaxLength="11" />
+    <Property Name="ExtraMonth" Type="smallint" />
+    <Property Name="ExtraDays" Type="smallint" />
+    <Property Name="U_Tipo_Venta" Type="nvarchar" MaxLength="10" />
+    <Property Name="U_TipoNC" Type="nvarchar" MaxLength="10" />
+    <Property Name="U_Cod_Sucursal" Type="nvarchar" MaxLength="30" />
+    <Property Name="LineNum" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="numeric" Precision="19" Scale="6" />
+    <Property Name="ItemCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Dscription" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price" Type="numeric" Precision="19" Scale="6" />
+    <Property Name="TotalSumSy" Type="numeric" Precision="19" Scale="6" />
+    <Property Name="DiasCredito" Type="varchar" MaxLength="19" />
+  </EntityType>
+  <EntityContainer Name="Viktor2ModelStoreContainer">
+    <EntitySet Name="View_DocEnvios" EntityType="Self.View_DocEnvios" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_DocEnvios].[NumDoc] AS [NumDoc], 
+    [View_DocEnvios].[U_FacNum] AS [U_FacNum], 
+    [View_DocEnvios].[FechaDoc] AS [FechaDoc], 
+    [View_DocEnvios].[FechaVenci] AS [FechaVenci], 
+    [View_DocEnvios].[CodCliente] AS [CodCliente], 
+    [View_DocEnvios].[NomCliente] AS [NomCliente], 
+    [View_DocEnvios].[DirCliente] AS [DirCliente], 
+    [View_DocEnvios].[TotalDoc] AS [TotalDoc], 
+    [View_DocEnvios].[Ref1] AS [Ref1], 
+    [View_DocEnvios].[ExtraMonth] AS [ExtraMonth], 
+    [View_DocEnvios].[ExtraDays] AS [ExtraDays], 
+    [View_DocEnvios].[U_Tipo_Venta] AS [U_Tipo_Venta], 
+    [View_DocEnvios].[U_TipoNC] AS [U_TipoNC], 
+    [View_DocEnvios].[U_Cod_Sucursal] AS [U_Cod_Sucursal], 
+    [View_DocEnvios].[LineNum] AS [LineNum], 
+    [View_DocEnvios].[Quantity] AS [Quantity], 
+    [View_DocEnvios].[ItemCode] AS [ItemCode], 
+    [View_DocEnvios].[Dscription] AS [Dscription], 
+    [View_DocEnvios].[Price] AS [Price], 
+    [View_DocEnvios].[TotalSumSy] AS [TotalSumSy], 
+    [View_DocEnvios].[DiasCredito] AS [DiasCredito]
+    FROM [dbo].[View_DocEnvios] AS [View_DocEnvios]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

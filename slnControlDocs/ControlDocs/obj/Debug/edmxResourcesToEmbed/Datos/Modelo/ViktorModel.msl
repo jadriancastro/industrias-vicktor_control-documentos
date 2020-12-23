@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Viktor2ModelStoreContainer" CdmEntityContainer="Viktor2Entities">
+    <EntitySetMapping Name="View_DocEnvios">
+      <EntityTypeMapping TypeName="Viktor2Model.View_DocEnvios">
+        <MappingFragment StoreEntitySet="View_DocEnvios">
+          <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
+          <ScalarProperty Name="U_FacNum" ColumnName="U_FacNum" />
+          <ScalarProperty Name="FechaDoc" ColumnName="FechaDoc" />
+          <ScalarProperty Name="FechaVenci" ColumnName="FechaVenci" />
+          <ScalarProperty Name="CodCliente" ColumnName="CodCliente" />
+          <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
+          <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
+          <ScalarProperty Name="TotalDoc" ColumnName="TotalDoc" />
+          <ScalarProperty Name="Ref1" ColumnName="Ref1" />
+          <ScalarProperty Name="ExtraMonth" ColumnName="ExtraMonth" />
+          <ScalarProperty Name="ExtraDays" ColumnName="ExtraDays" />
+          <ScalarProperty Name="U_Tipo_Venta" ColumnName="U_Tipo_Venta" />
+          <ScalarProperty Name="U_TipoNC" ColumnName="U_TipoNC" />
+          <ScalarProperty Name="U_Cod_Sucursal" ColumnName="U_Cod_Sucursal" />
+          <ScalarProperty Name="LineNum" ColumnName="LineNum" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="Dscription" ColumnName="Dscription" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="TotalSumSy" ColumnName="TotalSumSy" />
+          <ScalarProperty Name="DiasCredito" ColumnName="DiasCredito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControlDocs.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace ControlDocs
 {
     public partial class FrmEnvios : Form
     {
+         EnvioControl control= new EnvioControl();
+
         public FrmEnvios()
         {
             InitializeComponent();
+            CargarGrid();
+        }
+
+        private void CargarGrid()
+        {
+            gvEnvios.DataSource = control.ObtenerListaEnvios();
         }
     }
 }

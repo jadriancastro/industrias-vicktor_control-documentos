@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Viktor2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_DocEnvios">
+    <Key>
+      <PropertyRef Name="LineNum" />
+    </Key>
+    <Property Name="NumDoc" Type="Int32" />
+    <Property Name="U_FacNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="FechaDoc" Type="DateTime" Precision="3" />
+    <Property Name="FechaVenci" Type="DateTime" Precision="3" />
+    <Property Name="CodCliente" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="NomCliente" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DirCliente" Type="String" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Name="TotalDoc" Type="Decimal" Precision="19" Scale="6" />
+    <Property Name="Ref1" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="ExtraMonth" Type="Int16" />
+    <Property Name="ExtraDays" Type="Int16" />
+    <Property Name="U_Tipo_Venta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="U_TipoNC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="U_Cod_Sucursal" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="LineNum" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Precision="19" Scale="6" />
+    <Property Name="ItemCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dscription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="6" />
+    <Property Name="TotalSumSy" Type="Decimal" Precision="19" Scale="6" />
+    <Property Name="DiasCredito" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Viktor2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_DocEnvios" EntityType="Self.View_DocEnvios" />
+  </EntityContainer>
+</Schema>

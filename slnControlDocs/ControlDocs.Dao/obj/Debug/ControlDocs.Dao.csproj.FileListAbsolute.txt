@@ -1,0 +1,11 @@
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\ControlDocs.Dao.dll.config
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\ControlDocs.Dao.dll
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\ControlDocs.Dao.pdb
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\EntityFramework.dll
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\EntityFramework.xml
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\obj\Debug\ControlDocs.Dao.csproj.CoreCompileInputs.cache
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\obj\Debug\ControlDocs.Dao.csproj.CopyComplete
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\obj\Debug\ControlDocs.Dao.dll
+C:\Users\jadri\Documents\lynxsoftw_repository\repository\industrias_viktor\repos\control_documentos\industrias-vicktor_control-documentos\slnControlDocs\ControlDocs.Dao\obj\Debug\ControlDocs.Dao.pdb

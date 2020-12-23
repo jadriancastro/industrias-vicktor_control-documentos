@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Viktor2DataSet" targetNamespace="http://tempuri.org/Viktor2DataSet.xsd" xmlns:mstns="http://tempuri.org/Viktor2DataSet.xsd" xmlns="http://tempuri.org/Viktor2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reports.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_DocEnviosTableAdapter" GeneratorDataComponentClassName="View_DocEnviosTableAdapter" Name="View_DocEnvios" UserDataComponentName="View_DocEnviosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="Viktor2.dbo.View_DocEnvios" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NumDoc, U_FacNum, FechaDoc, FechaVenci, CodCliente, NomCliente, DirCliente, TotalDoc, Ref1, ExtraMonth, ExtraDays, U_Tipo_Venta, U_TipoNC, U_Cod_Sucursal, LineNum, Quantity, ItemCode, Dscription, Price, TotalSumSy, DiasCredito FROM dbo.View_DocEnvios</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NumDoc" DataSetColumn="NumDoc" />
+              <Mapping SourceColumn="U_FacNum" DataSetColumn="U_FacNum" />
+              <Mapping SourceColumn="FechaDoc" DataSetColumn="FechaDoc" />
+              <Mapping SourceColumn="FechaVenci" DataSetColumn="FechaVenci" />
+              <Mapping SourceColumn="CodCliente" DataSetColumn="CodCliente" />
+              <Mapping SourceColumn="NomCliente" DataSetColumn="NomCliente" />
+              <Mapping SourceColumn="DirCliente" DataSetColumn="DirCliente" />
+              <Mapping SourceColumn="TotalDoc" DataSetColumn="TotalDoc" />
+              <Mapping SourceColumn="Ref1" DataSetColumn="Ref1" />
+              <Mapping SourceColumn="ExtraMonth" DataSetColumn="ExtraMonth" />
+              <Mapping SourceColumn="ExtraDays" DataSetColumn="ExtraDays" />
+              <Mapping SourceColumn="U_Tipo_Venta" DataSetColumn="U_Tipo_Venta" />
+              <Mapping SourceColumn="U_TipoNC" DataSetColumn="U_TipoNC" />
+              <Mapping SourceColumn="U_Cod_Sucursal" DataSetColumn="U_Cod_Sucursal" />
+              <Mapping SourceColumn="LineNum" DataSetColumn="LineNum" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="ItemCode" DataSetColumn="ItemCode" />
+              <Mapping SourceColumn="Dscription" DataSetColumn="Dscription" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="TotalSumSy" DataSetColumn="TotalSumSy" />
+              <Mapping SourceColumn="DiasCredito" DataSetColumn="DiasCredito" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Viktor2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Viktor2DataSet" msprop:Generator_UserDSName="Viktor2DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_DocEnvios" msprop:Generator_TableClassName="View_DocEnviosDataTable" msprop:Generator_TableVarName="tableView_DocEnvios" msprop:Generator_RowChangedName="View_DocEnviosRowChanged" msprop:Generator_TablePropName="View_DocEnvios" msprop:Generator_RowDeletingName="View_DocEnviosRowDeleting" msprop:Generator_RowChangingName="View_DocEnviosRowChanging" msprop:Generator_RowEvHandlerName="View_DocEnviosRowChangeEventHandler" msprop:Generator_RowDeletedName="View_DocEnviosRowDeleted" msprop:Generator_RowClassName="View_DocEnviosRow" msprop:Generator_UserTableName="View_DocEnvios" msprop:Generator_RowEvArgName="View_DocEnviosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumDoc" msprop:Generator_ColumnVarNameInTable="columnNumDoc" msprop:Generator_ColumnPropNameInRow="NumDoc" msprop:Generator_ColumnPropNameInTable="NumDocColumn" msprop:Generator_UserColumnName="NumDoc" type="xs:int" minOccurs="0" />
+              <xs:element name="U_FacNum" msprop:Generator_ColumnVarNameInTable="columnU_FacNum" msprop:Generator_ColumnPropNameInRow="U_FacNum" msprop:Generator_ColumnPropNameInTable="U_FacNumColumn" msprop:Generator_UserColumnName="U_FacNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaDoc" msprop:Generator_ColumnVarNameInTable="columnFechaDoc" msprop:Generator_ColumnPropNameInRow="FechaDoc" msprop:Generator_ColumnPropNameInTable="FechaDocColumn" msprop:Generator_UserColumnName="FechaDoc" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaVenci" msprop:Generator_ColumnVarNameInTable="columnFechaVenci" msprop:Generator_ColumnPropNameInRow="FechaVenci" msprop:Generator_ColumnPropNameInTable="FechaVenciColumn" msprop:Generator_UserColumnName="FechaVenci" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodCliente" msprop:Generator_ColumnVarNameInTable="columnCodCliente" msprop:Generator_ColumnPropNameInRow="CodCliente" msprop:Generator_ColumnPropNameInTable="CodClienteColumn" msprop:Generator_UserColumnName="CodCliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomCliente" msprop:Generator_ColumnVarNameInTable="columnNomCliente" msprop:Generator_ColumnPropNameInRow="NomCliente" msprop:Generator_ColumnPropNameInTable="NomClienteColumn" msprop:Generator_UserColumnName="NomCliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DirCliente" msprop:Generator_ColumnVarNameInTable="columnDirCliente" msprop:Generator_ColumnPropNameInRow="DirCliente" msprop:Generator_ColumnPropNameInTable="DirClienteColumn" msprop:Generator_UserColumnName="DirCliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalDoc" msprop:Generator_ColumnVarNameInTable="columnTotalDoc" msprop:Generator_ColumnPropNameInRow="TotalDoc" msprop:Generator_ColumnPropNameInTable="TotalDocColumn" msprop:Generator_UserColumnName="TotalDoc" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ref1" msprop:Generator_ColumnVarNameInTable="columnRef1" msprop:Generator_ColumnPropNameInRow="Ref1" msprop:Generator_ColumnPropNameInTable="Ref1Column" msprop:Generator_UserColumnName="Ref1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExtraMonth" msprop:Generator_ColumnVarNameInTable="columnExtraMonth" msprop:Generator_ColumnPropNameInRow="ExtraMonth" msprop:Generator_ColumnPropNameInTable="ExtraMonthColumn" msprop:Generator_UserColumnName="ExtraMonth" type="xs:short" minOccurs="0" />
+              <xs:element name="ExtraDays" msprop:Generator_ColumnVarNameInTable="columnExtraDays" msprop:Generator_ColumnPropNameInRow="ExtraDays" msprop:Generator_ColumnPropNameInTable="ExtraDaysColumn" msprop:Generator_UserColumnName="ExtraDays" type="xs:short" minOccurs="0" />
+              <xs:element name="U_Tipo_Venta" msprop:Generator_ColumnVarNameInTable="columnU_Tipo_Venta" msprop:Generator_ColumnPropNameInRow="U_Tipo_Venta" msprop:Generator_ColumnPropNameInTable="U_Tipo_VentaColumn" msprop:Generator_UserColumnName="U_Tipo_Venta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="U_TipoNC" msprop:Generator_ColumnVarNameInTable="columnU_TipoNC" msprop:Generator_ColumnPropNameInRow="U_TipoNC" msprop:Generator_ColumnPropNameInTable="U_TipoNCColumn" msprop:Generator_UserColumnName="U_TipoNC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="U_Cod_Sucursal" msprop:Generator_ColumnVarNameInTable="columnU_Cod_Sucursal" msprop:Generator_ColumnPropNameInRow="U_Cod_Sucursal" msprop:Generator_ColumnPropNameInTable="U_Cod_SucursalColumn" msprop:Generator_UserColumnName="U_Cod_Sucursal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LineNum" msprop:Generator_ColumnVarNameInTable="columnLineNum" msprop:Generator_ColumnPropNameInRow="LineNum" msprop:Generator_ColumnPropNameInTable="LineNumColumn" msprop:Generator_UserColumnName="LineNum" type="xs:int" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" msprop:Generator_UserColumnName="ItemCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dscription" msprop:Generator_ColumnVarNameInTable="columnDscription" msprop:Generator_ColumnPropNameInRow="Dscription" msprop:Generator_ColumnPropNameInTable="DscriptionColumn" msprop:Generator_UserColumnName="Dscription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalSumSy" msprop:Generator_ColumnVarNameInTable="columnTotalSumSy" msprop:Generator_ColumnPropNameInRow="TotalSumSy" msprop:Generator_ColumnPropNameInTable="TotalSumSyColumn" msprop:Generator_UserColumnName="TotalSumSy" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DiasCredito" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDiasCredito" msprop:Generator_ColumnPropNameInRow="DiasCredito" msprop:Generator_ColumnPropNameInTable="DiasCreditoColumn" msprop:Generator_UserColumnName="DiasCredito" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
