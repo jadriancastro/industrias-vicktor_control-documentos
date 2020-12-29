@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Viktor2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Viktor2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_DocEnvios" EntityType="Viktor2Model.View_DocEnvios" />
+  </EntityContainer>
   <EntityType Name="View_DocEnvios">
     <Key>
       <PropertyRef Name="LineNum" />
@@ -25,8 +28,6 @@
     <Property Name="Price" Type="Decimal" Precision="19" Scale="6" />
     <Property Name="TotalSumSy" Type="Decimal" Precision="19" Scale="6" />
     <Property Name="DiasCredito" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+    <Property Name="CodVendedor" Type="Int32" />
   </EntityType>
-  <EntityContainer Name="Viktor2Entities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="View_DocEnvios" EntityType="Self.View_DocEnvios" />
-  </EntityContainer>
 </Schema>

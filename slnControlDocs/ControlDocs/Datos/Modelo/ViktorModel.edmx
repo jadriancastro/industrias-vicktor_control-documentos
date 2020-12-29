@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Viktor2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Viktor2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errores durante la generación:
 advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
         <EntityType Name="View_DocEnvios">
@@ -32,6 +32,7 @@ advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definid
           <Property Name="Price" Type="numeric" Precision="19" Scale="6" />
           <Property Name="TotalSumSy" Type="numeric" Precision="19" Scale="6" />
           <Property Name="DiasCredito" Type="varchar" MaxLength="19" />
+          <Property Name="CodVendedor" Type="int" />
         </EntityType>
         <EntityContainer Name="Viktor2ModelStoreContainer">
           <EntitySet Name="View_DocEnvios" EntityType="Self.View_DocEnvios" store:Type="Views" store:Schema="dbo">
@@ -56,15 +57,18 @@ advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definid
     [View_DocEnvios].[Dscription] AS [Dscription], 
     [View_DocEnvios].[Price] AS [Price], 
     [View_DocEnvios].[TotalSumSy] AS [TotalSumSy], 
-    [View_DocEnvios].[DiasCredito] AS [DiasCredito]
+    [View_DocEnvios].[DiasCredito] AS [DiasCredito], 
+    [View_DocEnvios].[CodVendedor] AS [CodVendedor]
     FROM [dbo].[View_DocEnvios] AS [View_DocEnvios]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Viktor2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Viktor2Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="View_DocEnvios" EntityType="Viktor2Model.View_DocEnvios" />
+        </EntityContainer>
         <EntityType Name="View_DocEnvios">
           <Key>
             <PropertyRef Name="LineNum" />
@@ -90,10 +94,8 @@ advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definid
           <Property Name="Price" Type="Decimal" Precision="19" Scale="6" />
           <Property Name="TotalSumSy" Type="Decimal" Precision="19" Scale="6" />
           <Property Name="DiasCredito" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+          <Property Name="CodVendedor" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="Viktor2Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="View_DocEnvios" EntityType="Self.View_DocEnvios" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -103,27 +105,28 @@ advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definid
           <EntitySetMapping Name="View_DocEnvios">
             <EntityTypeMapping TypeName="Viktor2Model.View_DocEnvios">
               <MappingFragment StoreEntitySet="View_DocEnvios">
-                <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
-                <ScalarProperty Name="U_FacNum" ColumnName="U_FacNum" />
-                <ScalarProperty Name="FechaDoc" ColumnName="FechaDoc" />
-                <ScalarProperty Name="FechaVenci" ColumnName="FechaVenci" />
-                <ScalarProperty Name="CodCliente" ColumnName="CodCliente" />
-                <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
-                <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
-                <ScalarProperty Name="TotalDoc" ColumnName="TotalDoc" />
-                <ScalarProperty Name="Ref1" ColumnName="Ref1" />
-                <ScalarProperty Name="ExtraMonth" ColumnName="ExtraMonth" />
-                <ScalarProperty Name="ExtraDays" ColumnName="ExtraDays" />
-                <ScalarProperty Name="U_Tipo_Venta" ColumnName="U_Tipo_Venta" />
-                <ScalarProperty Name="U_TipoNC" ColumnName="U_TipoNC" />
-                <ScalarProperty Name="U_Cod_Sucursal" ColumnName="U_Cod_Sucursal" />
-                <ScalarProperty Name="LineNum" ColumnName="LineNum" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
-                <ScalarProperty Name="Dscription" ColumnName="Dscription" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="TotalSumSy" ColumnName="TotalSumSy" />
+                <ScalarProperty Name="CodVendedor" ColumnName="CodVendedor" />
                 <ScalarProperty Name="DiasCredito" ColumnName="DiasCredito" />
+                <ScalarProperty Name="TotalSumSy" ColumnName="TotalSumSy" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Dscription" ColumnName="Dscription" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="LineNum" ColumnName="LineNum" />
+                <ScalarProperty Name="U_Cod_Sucursal" ColumnName="U_Cod_Sucursal" />
+                <ScalarProperty Name="U_TipoNC" ColumnName="U_TipoNC" />
+                <ScalarProperty Name="U_Tipo_Venta" ColumnName="U_Tipo_Venta" />
+                <ScalarProperty Name="ExtraDays" ColumnName="ExtraDays" />
+                <ScalarProperty Name="ExtraMonth" ColumnName="ExtraMonth" />
+                <ScalarProperty Name="Ref1" ColumnName="Ref1" />
+                <ScalarProperty Name="TotalDoc" ColumnName="TotalDoc" />
+                <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
+                <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
+                <ScalarProperty Name="CodCliente" ColumnName="CodCliente" />
+                <ScalarProperty Name="FechaVenci" ColumnName="FechaVenci" />
+                <ScalarProperty Name="FechaDoc" ColumnName="FechaDoc" />
+                <ScalarProperty Name="U_FacNum" ColumnName="U_FacNum" />
+                <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="ConnectionString1 (Settings)" DbObjectName="Viktor2.dbo.View_DocEnvios" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT NumDoc, U_FacNum, FechaDoc, FechaVenci, CodCliente, NomCliente, DirCliente, TotalDoc, Ref1, ExtraMonth, ExtraDays, U_Tipo_Venta, U_TipoNC, U_Cod_Sucursal, LineNum, Quantity, ItemCode, Dscription, Price, TotalSumSy, DiasCredito FROM dbo.View_DocEnvios</CommandText>
+                    <CommandText>SELECT NumDoc, U_FacNum, FechaDoc, FechaVenci, CodCliente, NomCliente, DirCliente, TotalDoc, Ref1, ExtraMonth, ExtraDays, U_Tipo_Venta, U_TipoNC, U_Cod_Sucursal, LineNum, Quantity, ItemCode, Dscription, Price, TotalSumSy, DiasCredito, CodVendedor FROM dbo.View_DocEnvios</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -40,6 +40,7 @@
               <Mapping SourceColumn="Price" DataSetColumn="Price" />
               <Mapping SourceColumn="TotalSumSy" DataSetColumn="TotalSumSy" />
               <Mapping SourceColumn="DiasCredito" DataSetColumn="DiasCredito" />
+              <Mapping SourceColumn="CodVendedor" DataSetColumn="CodVendedor" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -141,6 +142,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="CodVendedor" msprop:Generator_ColumnVarNameInTable="columnCodVendedor" msprop:Generator_ColumnPropNameInRow="CodVendedor" msprop:Generator_ColumnPropNameInTable="CodVendedorColumn" msprop:Generator_UserColumnName="CodVendedor" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

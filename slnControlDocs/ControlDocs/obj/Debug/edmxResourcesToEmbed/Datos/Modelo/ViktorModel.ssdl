@@ -27,6 +27,7 @@ advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definid
     <Property Name="Price" Type="numeric" Precision="19" Scale="6" />
     <Property Name="TotalSumSy" Type="numeric" Precision="19" Scale="6" />
     <Property Name="DiasCredito" Type="varchar" MaxLength="19" />
+    <Property Name="CodVendedor" Type="int" />
   </EntityType>
   <EntityContainer Name="Viktor2ModelStoreContainer">
     <EntitySet Name="View_DocEnvios" EntityType="Self.View_DocEnvios" store:Type="Views" store:Schema="dbo">
@@ -51,7 +52,8 @@ advertencia 6002: La tabla o vista 'Viktor2.dbo.View_DocEnvios' no tiene definid
     [View_DocEnvios].[Dscription] AS [Dscription], 
     [View_DocEnvios].[Price] AS [Price], 
     [View_DocEnvios].[TotalSumSy] AS [TotalSumSy], 
-    [View_DocEnvios].[DiasCredito] AS [DiasCredito]
+    [View_DocEnvios].[DiasCredito] AS [DiasCredito], 
+    [View_DocEnvios].[CodVendedor] AS [CodVendedor]
     FROM [dbo].[View_DocEnvios] AS [View_DocEnvios]</DefiningQuery>
     </EntitySet>
   </EntityContainer>

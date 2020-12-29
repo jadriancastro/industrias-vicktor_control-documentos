@@ -321,6 +321,8 @@ namespace ControlDocs.Datos.DataSet {
             
             private global::System.Data.DataColumn columnDiasCredito;
             
+            private global::System.Data.DataColumn columnCodVendedor;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_DocEnviosDataTable() {
@@ -524,6 +526,14 @@ namespace ControlDocs.Datos.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CodVendedorColumn {
+                get {
+                    return this.columnCodVendedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -580,7 +590,8 @@ namespace ControlDocs.Datos.DataSet {
                         string Dscription, 
                         decimal Price, 
                         decimal TotalSumSy, 
-                        string DiasCredito) {
+                        string DiasCredito, 
+                        int CodVendedor) {
                 View_DocEnviosRow rowView_DocEnviosRow = ((View_DocEnviosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         NumDoc,
@@ -603,7 +614,8 @@ namespace ControlDocs.Datos.DataSet {
                         Dscription,
                         Price,
                         TotalSumSy,
-                        DiasCredito};
+                        DiasCredito,
+                        CodVendedor};
                 rowView_DocEnviosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_DocEnviosRow);
                 return rowView_DocEnviosRow;
@@ -647,6 +659,7 @@ namespace ControlDocs.Datos.DataSet {
                 this.columnPrice = base.Columns["Price"];
                 this.columnTotalSumSy = base.Columns["TotalSumSy"];
                 this.columnDiasCredito = base.Columns["DiasCredito"];
+                this.columnCodVendedor = base.Columns["CodVendedor"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -694,6 +707,8 @@ namespace ControlDocs.Datos.DataSet {
                 base.Columns.Add(this.columnTotalSumSy);
                 this.columnDiasCredito = new global::System.Data.DataColumn("DiasCredito", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDiasCredito);
+                this.columnCodVendedor = new global::System.Data.DataColumn("CodVendedor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodVendedor);
                 this.columnU_FacNum.MaxLength = 20;
                 this.columnCodCliente.MaxLength = 15;
                 this.columnNomCliente.MaxLength = 100;
@@ -1180,6 +1195,22 @@ namespace ControlDocs.Datos.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int CodVendedor {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_DocEnvios.CodVendedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CodVendedor\' de la tabla \'View_DocEnvios\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_DocEnvios.CodVendedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsNumDocNull() {
                 return this.IsNull(this.tableView_DocEnvios.NumDocColumn);
             }
@@ -1417,6 +1448,18 @@ namespace ControlDocs.Datos.DataSet {
             public void SetDiasCreditoNull() {
                 this[this.tableView_DocEnvios.DiasCreditoColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCodVendedorNull() {
+                return this.IsNull(this.tableView_DocEnvios.CodVendedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCodVendedorNull() {
+                this[this.tableView_DocEnvios.CodVendedorColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -1599,6 +1642,7 @@ namespace ControlDocs.Datos.DataSet.Viktor2DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Price", "Price");
             tableMapping.ColumnMappings.Add("TotalSumSy", "TotalSumSy");
             tableMapping.ColumnMappings.Add("DiasCredito", "DiasCredito");
+            tableMapping.ColumnMappings.Add("CodVendedor", "CodVendedor");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1615,7 +1659,7 @@ namespace ControlDocs.Datos.DataSet.Viktor2DataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT NumDoc, U_FacNum, FechaDoc, FechaVenci, CodCliente, NomCliente, DirCliente, TotalDoc, Ref1, ExtraMonth, ExtraDays, U_Tipo_Venta, U_TipoNC, U_Cod_Sucursal, LineNum, Quantity, ItemCode, Dscription, Price, TotalSumSy, DiasCredito FROM dbo.View_DocEnvios";
+            this._commandCollection[0].CommandText = @"SELECT NumDoc, U_FacNum, FechaDoc, FechaVenci, CodCliente, NomCliente, DirCliente, TotalDoc, Ref1, ExtraMonth, ExtraDays, U_Tipo_Venta, U_TipoNC, U_Cod_Sucursal, LineNum, Quantity, ItemCode, Dscription, Price, TotalSumSy, DiasCredito, CodVendedor FROM dbo.View_DocEnvios";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

@@ -29,5 +29,6 @@ namespace ControlDocs.Dto
         public Nullable<decimal> Price { get; set; }
         public Nullable<decimal> TotalSumSy { get; set; }
         public string DiasCredito { get; set; }
+        public Nullable<int> CodVendedor { get; set; }
     }
 }

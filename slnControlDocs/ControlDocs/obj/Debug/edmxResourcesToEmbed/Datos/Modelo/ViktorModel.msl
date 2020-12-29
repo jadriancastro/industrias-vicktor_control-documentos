@@ -4,27 +4,28 @@
     <EntitySetMapping Name="View_DocEnvios">
       <EntityTypeMapping TypeName="Viktor2Model.View_DocEnvios">
         <MappingFragment StoreEntitySet="View_DocEnvios">
-          <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
-          <ScalarProperty Name="U_FacNum" ColumnName="U_FacNum" />
-          <ScalarProperty Name="FechaDoc" ColumnName="FechaDoc" />
-          <ScalarProperty Name="FechaVenci" ColumnName="FechaVenci" />
-          <ScalarProperty Name="CodCliente" ColumnName="CodCliente" />
-          <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
-          <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
-          <ScalarProperty Name="TotalDoc" ColumnName="TotalDoc" />
-          <ScalarProperty Name="Ref1" ColumnName="Ref1" />
-          <ScalarProperty Name="ExtraMonth" ColumnName="ExtraMonth" />
-          <ScalarProperty Name="ExtraDays" ColumnName="ExtraDays" />
-          <ScalarProperty Name="U_Tipo_Venta" ColumnName="U_Tipo_Venta" />
-          <ScalarProperty Name="U_TipoNC" ColumnName="U_TipoNC" />
-          <ScalarProperty Name="U_Cod_Sucursal" ColumnName="U_Cod_Sucursal" />
-          <ScalarProperty Name="LineNum" ColumnName="LineNum" />
-          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
-          <ScalarProperty Name="Dscription" ColumnName="Dscription" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="TotalSumSy" ColumnName="TotalSumSy" />
+          <ScalarProperty Name="CodVendedor" ColumnName="CodVendedor" />
           <ScalarProperty Name="DiasCredito" ColumnName="DiasCredito" />
+          <ScalarProperty Name="TotalSumSy" ColumnName="TotalSumSy" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Dscription" ColumnName="Dscription" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="LineNum" ColumnName="LineNum" />
+          <ScalarProperty Name="U_Cod_Sucursal" ColumnName="U_Cod_Sucursal" />
+          <ScalarProperty Name="U_TipoNC" ColumnName="U_TipoNC" />
+          <ScalarProperty Name="U_Tipo_Venta" ColumnName="U_Tipo_Venta" />
+          <ScalarProperty Name="ExtraDays" ColumnName="ExtraDays" />
+          <ScalarProperty Name="ExtraMonth" ColumnName="ExtraMonth" />
+          <ScalarProperty Name="Ref1" ColumnName="Ref1" />
+          <ScalarProperty Name="TotalDoc" ColumnName="TotalDoc" />
+          <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
+          <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
+          <ScalarProperty Name="CodCliente" ColumnName="CodCliente" />
+          <ScalarProperty Name="FechaVenci" ColumnName="FechaVenci" />
+          <ScalarProperty Name="FechaDoc" ColumnName="FechaDoc" />
+          <ScalarProperty Name="U_FacNum" ColumnName="U_FacNum" />
+          <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
